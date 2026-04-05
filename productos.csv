@@ -1,0 +1,8 @@
+id_producto,nombre,id_proveedor,precio_unitario
+PR001,laptop,P001,850
+PR002,tablet,P003,450
+PR003,silla,P002,120
+PR004,escritorio,P004,200
+PR005,smartphone,P005,600
+PR006,monitor,P001,350
+PR007,teclado,P003,45

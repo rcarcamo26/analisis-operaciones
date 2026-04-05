@@ -1,0 +1,9 @@
+.venv/
+*.db
+__pycache__/
+.idea/
+*.xlsx
+*.png
+sesion*.py
+sesion_*.py
+bodega.py

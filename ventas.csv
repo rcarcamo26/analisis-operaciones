@@ -1,0 +1,11 @@
+id,producto,categoria,region,cantidad,precio_unitario,estado
+1,laptop,electronico,norte,5,850,entregado
+2,tablet,electronico,sur,12,450,pendiente
+3,silla,mobiliario,norte,8,120,entregado
+4,smartphone,electronico,sur,3,600,entregado
+5,escritorio,mobiliario,norte,6,200,pendiente
+6,mouse,electronico,sur,15,35,entregado
+7,silla,mobiliario,sur,4,120,entregado
+8,laptop,electronico,norte,7,850,pendiente
+9,escritorio,mobiliario,sur,3,200,entregado
+10,tablet,electronico,norte,9,450,entregado

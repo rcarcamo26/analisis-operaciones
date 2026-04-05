@@ -1,0 +1,7 @@
+id,producto,cantidad,precio_unitario,estado
+1001,laptop,5,850,entregado
+1002,tablet,12,450,pendiente
+1003,smartphone,8,600,entregado
+1004,monitor,3,200,pendiente
+1005,teclado,20,45,entregado
+1006,mouse,7,35,pendiente

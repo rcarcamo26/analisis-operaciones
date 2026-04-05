@@ -1,0 +1,16 @@
+id,producto,categoria,region,vendedor,cantidad,precio_unitario,estado
+1,laptop,electronico,norte,Ana,5,850,entregado
+2,tablet,electronico,sur,Luis,12,450,pendiente
+3,silla,mobiliario,norte,Ana,8,120,entregado
+4,smartphone,electronico,sur,Carlos,3,600,entregado
+5,escritorio,mobiliario,norte,Luis,6,200,pendiente
+6,mouse,electronico,sur,Ana,15,35,entregado
+7,silla,mobiliario,sur,Carlos,4,120,entregado
+8,laptop,electronico,norte,Luis,7,850,pendiente
+9,escritorio,mobiliario,sur,Ana,3,200,entregado
+10,tablet,electronico,norte,Carlos,9,450,entregado
+11,smartphone,electronico,norte,Ana,6,600,entregado
+12,mouse,mobiliario,sur,Luis,20,35,entregado
+13,laptop,electronico,sur,Carlos,4,850,entregado
+14,silla,mobiliario,norte,Ana,10,120,entregado
+15,tablet,electronico,sur,Luis,8,450,pendiente
