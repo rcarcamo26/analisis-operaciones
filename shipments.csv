@@ -1,0 +1,13 @@
+order_id,ship_date,delivery_date,origin_city,destination_city,distance_km,carrier,shipping_cost,delivery_status
+1001,2024-01-01,2024-01-03,Tegucigalpa,San Pedro Sula,240,DHL,25,On time
+1002,2024-01-02,2024-01-06,Tegucigalpa,La Ceiba,380,FedEx,40,Late
+1003,2024-01-03,2024-01-05,San Pedro Sula,Tegucigalpa,240,UPS,30,On time
+1004,2024-01-04,2024-01-09,Tegucigalpa,Choluteca,150,DHL,20,Late
+1005,2024-01-05,2024-01-07,La Ceiba,San Pedro Sula,300,FedEx,35,On time
+1006,2024-01-06,2024-01-10,Tegucigalpa,La Ceiba,380,UPS,45,Late
+1007,2024-01-07,2024-01-08,San Pedro Sula,Tegucigalpa,240,DHL,22,On time
+1008,2024-01-08,2024-01-12,Tegucigalpa,Choluteca,150,FedEx,28,Late
+1009,2024-01-09,2024-01-11,La Ceiba,Tegucigalpa,380,UPS,42,On time
+1010,2024-01-10,2024-01-15,Tegucigalpa,San Pedro Sula,240,DHL,27,Late
+1011,2024-01-11,2024-01-13,Choluteca,Tegucigalpa,150,FedEx,26,On time
+1012,2024-01-12,2024-01-16,Tegucigalpa,La Ceiba,380,UPS,44,Late

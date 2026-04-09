@@ -52,9 +52,6 @@ with pd.ExcelWriter("reporte_operaciones.xlsx") as writer:
     plt.savefig("grafica_vendedores.png")
     plt.close()
 
-    # OJO IMPORTANTE:
-    # Cuando creas la figura con fig, ax = plt.subplots() usas fig.savefig()
-    # Cuando usas datos.plot() directamente sin crear fig, usas plt.savefig()
 
     worksheet = writer.sheets["Por Vendedor"]
 

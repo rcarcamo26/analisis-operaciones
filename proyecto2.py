@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import sqlite3
 from openpyxl.drawing.image import Image
 
-# el siguiente código permite leer las tablas que formaran una base de datos y luego crear la base de datos
 
 conn = sqlite3.connect("analisis_proveedores.db")
 
@@ -54,7 +53,7 @@ dias_retraso = pd.read_sql("""
 print(dias_retraso)
 
 # Gráficos:
-# Gráfico Tasa de Cumplimiento por proveedor, OJO a este código que sirve para dataframes generados en consultas que ya vienen agrupados.
+# Gráfico Tasa de Cumplimiento por proveedor
 tasa_cumplimiento = kpi_proveedores.set_index("nombre")["pct_cumplimiento"].plot(kind="barh")
 plt.title("KPI Cumplimiento Proveedores")
 plt.ylabel("Porcentaje Cumplimiento")
@@ -88,11 +87,11 @@ with pd.ExcelWriter("analisis_proveedores.xlsx") as writer:
     worksheet.add_image(img_kpi, "H2")
 
 
-    # Gráfico Días de Retraso.
+    # Gráfico Días de Retraso
 
     worksheet = writer.sheets["Días de Retraso"]
 
-    img_kpi = Image("grafica_retrasos_x_proveedor.png")
+    img_retraso = Image("grafica_retrasos_x_proveedor.png")
     worksheet.add_image(img_kpi, "H2")
 
 print("Reporte completo exportado")
