@@ -1,3 +1,10 @@
+"""
+Proyecto 1: Reporte Automático de Operaciones de Ventas
+Análisis de ventas por categoría, región y vendedor.
+Detección de productos de bajo rendimiento.
+Autor: Rigoberto Cárcamo
+"""
+
 import pandas as pd
 
 import matplotlib.pyplot as plt
@@ -9,21 +16,19 @@ df = pd.read_csv("operaciones.csv")
 df["valor"] = df["cantidad"] * df["precio_unitario"]
 
 pd.set_option("display.max_columns", None)
-print(df.head(5))
-print(df.describe())
 
 #Tabla 1: Total de valor y cantidad por categoria
-print(df.groupby("categoria")[["valor", "cantidad"]].sum())
+#print(df.groupby("categoria")[["valor", "cantidad"]].sum())
 
 #Tabla 2: Total de valor por region y estado
-print(df.groupby(["region", "estado"])["valor"].sum())
+#print(df.groupby(["region", "estado"])["valor"].sum())
 
 #Tabla 3: Total de valor por vendedor, ordenado de mayor a menor
-print(df.groupby("vendedor")["valor"].sum().sort_values(ascending=False))
+#print(df.groupby("vendedor")["valor"].sum().sort_values(ascending=False))
 
 #Productos con bajo rendimiento:
 por_producto = df.groupby("producto")["valor"].sum()
-print(por_producto[por_producto < 2000])
+#print(por_producto[por_producto < 2000])
 
 with pd.ExcelWriter("reporte_operaciones.xlsx") as writer:
     # Hoja 1:

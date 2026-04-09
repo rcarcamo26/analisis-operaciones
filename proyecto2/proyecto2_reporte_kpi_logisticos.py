@@ -1,3 +1,11 @@
+"""
+Proyecto 2: Reporte Automático de KPI Logísticos
+Análisis de cumplimiento y eficiencia por proveedor.
+Análisis con gráficos de tasas de cumplimiento y
+días de retraso por proveedor, exportando a archivo
+en Excel.
+Autor: Rigoberto Cárcamo
+"""
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -22,9 +30,6 @@ productos.to_sql("productos", conn, if_exists="replace", index=False)
 entregas = pd.read_csv("entregas.csv")
 entregas.to_sql("entregas", conn, if_exists="replace", index=False)
 
-print(proveedores.shape)
-print(productos.shape)
-print(entregas.shape)
 
 # consulta Tasa de cumplimiento por proveedor
 kpi_proveedores = pd.read_sql("""
@@ -36,7 +41,7 @@ kpi_proveedores = pd.read_sql("""
         JOIN proveedores on entregas.id_proveedor = proveedores.id_proveedor
         GROUP BY proveedores.nombre
         """, conn)
-print(kpi_proveedores)
+
 
 # consulta para conocer el promedio y el máximo de días de retraso en entregas retrasadas por proveedor.
 
@@ -50,7 +55,7 @@ dias_retraso = pd.read_sql("""
     GROUP BY proveedores.nombre
     ORDER BY promedio_dias_retraso DESC
 """, conn)
-print(dias_retraso)
+
 
 # Gráficos:
 # Gráfico Tasa de Cumplimiento por proveedor
@@ -92,7 +97,7 @@ with pd.ExcelWriter("analisis_proveedores.xlsx") as writer:
     worksheet = writer.sheets["Días de Retraso"]
 
     img_retraso = Image("grafica_retrasos_x_proveedor.png")
-    worksheet.add_image(img_kpi, "H2")
+    worksheet.add_image(img_retraso, "H2")
 
 print("Reporte completo exportado")
 
