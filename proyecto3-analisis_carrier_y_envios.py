@@ -65,9 +65,7 @@ print(resultado)
 
 
 
-git add .
-git commit -m "proyecto3-analisis_carrier_y_envios"
-git push
+
 
 
 
