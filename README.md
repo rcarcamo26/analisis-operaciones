@@ -22,6 +22,12 @@ KPIs logísticos por proveedor: tasa de cumplimiento, días de retraso
 y detección de proveedores problemáticos.
 Reporte Excel automatizado con visualizaciones.
 
+### 🚛 Proyecto 3 - Análisis de Carriers y Tiempos de Envío
+Análisis de rendimiento de carriers (DHL, FedEx, UPS) por costo,
+tiempo de entrega y tasa de retrasos por ciudad destino.
+Incluye recomendación de carrier óptimo basada en balance 
+costo-eficiencia.
+
 ## Perfil profesional
 Ingeniero Industrial con experiencia en logística y operaciones, 
 especializado en análisis de datos aplicado a cadena de suministro.
