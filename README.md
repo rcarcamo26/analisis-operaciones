@@ -43,8 +43,8 @@ tiempo de entrega y puntualidad.
 
 Insight clave:
 - FedEx presenta el mejor balance entre costo y tiempo de entrega
-- UPS muestra mayores costos sin mejoras en desempeño
-- DHL es opción de menor costo con ligera reducción en eficiencia
+- UPS muestra mayores costos sin mejoras en desempeño (en este dataset)
+- DHL es opción de menor costo con ligera reducción en eficiencia (en este dataset)
 
 Recomendación:
 - Priorizar FedEx como carrier principal
