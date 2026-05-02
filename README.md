@@ -50,6 +50,20 @@ Recomendación:
 - Priorizar FedEx como carrier principal
 - Utilizar DHL en estrategias de reducción de costos
 
+
+### 🛒 Proyecto 4 - E-Commerce Logistics Performance Analysis
+Real-world analysis of 99,441 orders from Olist, a Brazilian e-commerce marketplace.
+
+**Key findings:**
+- 37.7% of orders exceed average delivery time
+- 93% of delays originate in the transport phase
+- RJ state concentrates the highest business risk
+- SLA compliance gap detected between reported and actual performance
+
+**Tools:** Python, Pandas, SQL (SQLite), Matplotlib, NumPy
+
+📓 [View full notebook on Google Colab](https://colab.research.google.com/drive/1CVFKtJzeBJC0wMBGuE1XSoFU04wI6zoL?usp=sharing)
+
 ## Perfil profesional
 Ingeniero Industrial con experiencia en logística y operaciones, 
 especializado en análisis de datos aplicado a cadena de suministro.
